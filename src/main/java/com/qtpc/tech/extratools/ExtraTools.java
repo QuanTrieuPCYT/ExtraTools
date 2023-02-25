@@ -2,6 +2,7 @@ package com.qtpc.tech.extratools;
 
 import com.qtpc.tech.extratools.commands.ExtraToolsCommand;
 import org.bukkit.plugin.Plugin;
+import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.logging.Logger;
@@ -17,8 +18,8 @@ public final class ExtraTools extends JavaPlugin {
         plugin = this;
         logger.info("ExtraTools has been enabled!");
         // register the command to the server for it to handle
-        ExtraToolsCommand commandExecutor = new ExtraToolsCommand(this);
-        getCommand("extratools").setExecutor(commandExecutor);
+        ExtraToolsCommand extraToolsCommand = new ExtraToolsCommand(this);
+        getCommand("extratools").setExecutor(extraToolsCommand);
     }
 
     @Override
