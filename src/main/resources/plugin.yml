@@ -1,0 +1,7 @@
+name: ExtraTools
+version: '${project.version}'
+main: com.qtpc.tech.extratools.ExtraTools
+api-version: 1.19
+authors: [ QuanTrieuPCYT ]
+description: ExtraTools for system administration at ease!
+website: https://qtpc.tech
